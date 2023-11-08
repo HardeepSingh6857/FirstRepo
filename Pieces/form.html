@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form class="form" action="/new.html" target="_top" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="uname">User name:</label>
+            <input type="text" id="uname" name="uname"><br>
+            <label for="pass">Password name:</label>
+            <input type="password" id="pass" name="pass"><br>
+            
+            <label for="mail">Email Id:</label>
+            <input type="email" id="mail" name="mail"><br>
+            <label for="file">File input:</label>
+            <input type="file" id="file" name="file"><br>
+            <input list="browsers" name="browser" placeholder="select a browser">
+            <datalist id="browsers" >
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br>
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit"><br>
+            <label for="cars">Choose Your Car:</label>
+            <select id="cars" name="cars" size="1" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br>
+            <textarea name="message" rows="10" cols="50">
+            The cat was playing in the garden.
+            </textarea><br>
+            <button>Click Me</button>
+            <input type="submit" id="submit" name="submit"><br>
+            
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        
+
+    </form>
+</body>
+</html>

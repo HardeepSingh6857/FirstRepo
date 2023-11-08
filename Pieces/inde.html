@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4891/4891616.png">
+
+</head>
+<body>
+
+<div class="new">    
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+</div>
+    <!-- iframe -->
+    <br><iframe src="/new.html" style="border:ridge;" title="Example" height="400px" width="300px"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5oH9Nr3bKfw" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <!--JavaScript -->
+    <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, illo voluptatum. Consequatur ad accusamus
+        eaque praesentium at obcaecati, suscipit aut.</p>
+    <script>
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "tomato";
+        document.getElementById("demo").style.backgroundColor = "DodgerBlue";
+        document.getElementById("demo").innerHTML = "Hello World!";
+            // document.getElementById("image").src = "picture.gif"    //to change attributes;
+    </script>
+    
+        <video width="320" height="240" autoplay>
+        <source src="<iframe width="560" height="315" src="https://youtu.be/5oH9Nr3bKfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="https://music.youtube.com/watch?v=tMgEYaclnQ0&feature=share" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<div class="gradient">
+    <div style="background-image: linear-gradient(0deg , #fff, #04ff00, #001d37);height:200px;width: 200px;"></div>
+    <div style="background-image: linear-gradient(45deg , #04ff00, #0084ff, #001d37);height:200px;width: 200px;"></div>
+    <div style="background-image: linear-gradient(90deg , #0084ff, #ff0000, #001d37);height:200px;width: 200px;"></div>
+    <div style="background-image: linear-gradient(135deg , #ff0000, #ffae00, #001d37);height:200px;width: 200px;"></div>
+    <div style="background-image: linear-gradient(180deg , #ffae00, #ff6600, #001d37);height:200px;width: 200px;"></div>
+    <div style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);height:200px;width: 100%;"></div>
+    <div style="background-image: repeating-radial-gradient(red, yellow 10%, green 15%);height:200px;width: 100%;"></div>
+    <div style="background-image: conic-gradient(red, yellow, green, blue, black);height:200px;width: 100%;"></div>
+</div>
+
+</body>
+</html>
